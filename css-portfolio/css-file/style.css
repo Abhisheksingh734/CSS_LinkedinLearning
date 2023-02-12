@@ -1,0 +1,160 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    color: #343434;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img{
+    width: 300px;
+}
+a{
+    color: #ffe66d;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-size: 90px;
+}
+h2{
+    font-size: 45px;
+}
+h1, h2{
+    margin: 10px 0;
+    font-family: 'Caveat', cursive;
+    font-weight: 300;
+}
+
+.content-wraper{
+    max-width: 1000px;
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.divider>section{
+    border-bottom: 1px dashed #343434;
+    padding: 20px 0;
+}
+.divider>section:last-of-type{
+    border-bottom: none;
+}
+
+/* profile
+------------------------------------- */
+header{
+    background-color: #2f3061;
+    color: #f7fff7;
+}
+
+/* projects
+------------------------------------- */
+.projects{
+    background: #e4f3e4;
+}
+
+.projects a{
+    color: #2f3061;
+}
+.projects .btn{
+    color: #f7fff7;
+    background: #2f3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects .btn:hover{
+    background: rgba(47,48,97,.8);
+}
+
+.project-item{
+    overflow: hidden;
+
+}
+
+.project-item h3{
+    font-size: 1.5em;
+}
+
+
+.project-item p{
+    padding: 5px;
+}
+
+
+/* work experience
+------------------------------------- */
+.work-experience{
+    background: #a1c6d7;
+}
+
+
+/* education
+------------------------------------- */
+
+.item-details h3 + p{
+    font-style: italic;
+}
+.item-details h3 ~ p{
+    margin: 0;
+}
+.education{
+    background-image: url("../images-file/joanna-kosinska-unsplash.jpg");
+    background-position: top right;
+    background-size: cover;
+    padding: 100px;
+}
+.education p{
+    width: 60%;
+}
+
+/* contact info
+------------------------------------- */
+footer{
+    background: #343434;
+    color: #f7fff7;
+
+}
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+   
+}
+
+.contact-list a{
+    padding: 15px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 750px) {
+    .project-item img{
+        float: left;
+        margin: 20px;
+    
+    }
+    header, footer{
+        text-align: center;
+    }
+    .contact-list{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px){
+    h1{
+        font-size: 75px;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
+}
